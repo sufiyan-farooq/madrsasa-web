@@ -1,0 +1,304 @@
+
+.contactbox{
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+.content-box{
+  display: flex;
+  gap: 100px;
+  margin-top: 24px;
+}
+.logo img{
+  width: 100px;
+}
+.contact-section{
+display: flex;
+gap: 14px;
+}
+.nav-link{
+  margin-left: 23px;
+}
+
+.contact-icon {
+  font-size: 29px;
+  color: #157815;
+}
+
+.Contact-heading h6{
+  font-size: 20px;
+}
+.Contact-heading p{
+font-size: 15px;
+color: #6c757d;
+
+}
+
+
+
+.navbar {
+    background-color: #000 !important; /* Light background color for the navbar */
+    padding: 0.7rem 1rem; /* Adjust padding for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Larger font size for the brand */
+    color: #343a40; /* Dark color for the brand */
+  }
+
+  .navbar-toggler{
+    background-color: #157815;
+    color: #f1f1f1;
+  }
+
+  
+  .navbar-nav .nav-link {
+    
+    color: #fff; /* Dark color for nav links */
+    padding: 0.5rem 1rem; /* Adjust padding for nav links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  .navbar-nav{
+    padding: 0px 40px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #157815; /* Change color on hover */
+  }
+  
+  
+  .navbar-nav .nav-item.dropdown .dropdown-item:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+  }
+  
+  
+  .register-btn {
+  width: 10em;
+  position: relative;
+  height: 3em;
+  border: 3px ridge #157815;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-btn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #000;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.register-btn::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 35%;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.register-btn:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+.register-btn:hover {
+  box-shadow: inset 0px 0px 25px #157815;
+}
+  
+
+
+
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center; /* Center nav links on smaller screens */
+    }
+    .register{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  .background-image{
+    background-size: cover !important;
+  }
+
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-item img {
+    height: 400px; 
+    object-fit: cover; 
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    color: #fff;
+    max-width: 50%; /* Adjust width as needed */
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 0px !important;
+   }
+
+  .carousel-caption h1 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+  }
+
+  .carousel-caption{
+    color: #000;
+  }
+  .carousel-caption h1{
+  font-size: 40px;
+  }
+
+
+.aboutus-box{
+   width: 100%;
+   height: 480px;
+   margin-top: 80px;
+   padding: 30px;
+
+}
+.about-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-image img{
+width: 450px;
+}
+#about-btn{
+  background-color: #157815;
+  color: #fff;
+  border: none;
+  padding: 10px 20px ;
+  font-weight: 500;
+  transition: background-color 0.5s ease; /* Smooth transition */
+  margin-top: 20px;
+
+
+}
+.about-content h3{
+    border-left: 4px solid #157815;
+    padding-left: 10px;
+    font-size: 22px;
+}
+.about-content h2{
+  font-size: 41px;
+  margin-top: 15px;
+  font-family: none;
+  font-weight: 550;
+}
+
+.about-content p{
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+#about-btn:hover{
+background-color: #000;
+
+}
+
+
+.service-info{
+  text-align: center;
+  margin-top: 120px;
+}
+.service-info span{
+  font-size: 25px;
+    font-weight: 500;
+    border-left: 5px solid #157815;
+    margin-top: 18px;
+
+    padding-left: 12px;
+}
+.service-info h1{
+  font-family: none;
+  font-size: 40px;
+  margin-top: 18px;
+
+  font-weight: 550;
+}
+.service-info p{
+  font-size: 16px;
+  margin-top: 18px;
+  color: #343a40;
+}
+
+
+
+@media screen and (max-width:900px) {
+  .about-info{
+    display: flex;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width:730px) {
+  .carousel-caption h1{
+    font-size: 30px;
+  }
+  .carousel-caption{
+    top: 40%;
+  }
+  .Contact-heading h6{
+    font-size: 15px;
+    
+  }
+  .Contact-heading p{
+    font-size: 10px;
+  }
+  .contact-icon{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:600px) {
+  .content-box{
+    display: flex;
+    gap: 50px !important;
+  }
+  
+}
+@media screen and (max-width:525px) {
+  .content-box{
+   display: none;
+  }
+  
+}
+
+@media screen and (max-width:470px) {
+  .carousel-caption h1{
+    font-size: 22px !important;
+  }
+  .carousel-caption p{
+    font-size: 13px;
+  }
+  .about-image img {
+    width: 330px;
+    margin-top: 21px;
+}
+}
